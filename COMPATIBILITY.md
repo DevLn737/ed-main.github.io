@@ -21,7 +21,7 @@ Statuses: `mapped`, `patched`, `verified`, `limited`.
 | Users and profile | `/users`, public profile representative | `p-users p-users-index`; `p-profiles p-profiles-show` | user cards, profile summary, stats, friends/clubs/favourites, comments | shared and `prof_form_*` | mapped |
 | Profile lists | `/:profile/list/anime`, `/:profile/list/manga`, `/:profile/list/visual_novel` | `p-user_rates p-user_rates-index p-profiles p-profiles-index` | list switchers, tables/lines, search, collection filters; VN empty state | shared and `prof_form_*` | mapped |
 | Profile utilities | `/:profile/achievements`, `/:profile/publications`, `/:profile/custom_lists/anime`, `/:profile/edit/account` | `p-achievements-index`; `p-profiles-publications`; `p-custom_lists-index`; `p-profiles-edit` | achievements/badges, empty states, forms, OAuth token block | shared and `prof_form_*` | mapped |
-| Profile messages | `/:profile/messages/news` | `p-messages p-messages-index p-profiles p-profiles-index` | message/news rows, embedded catalog entries and tooltips, unread markers | shared and `prof_form_*` | mapped |
+| Profile messages | `/:profile/messages/news`, `/:profile/dialogs` | `p-messages p-messages-index`; `p-dialogs p-dialogs-index`; profile index classes | message/news rows, embedded catalog entries and tooltips, unread markers; empty dialog list | shared and `prof_form_*` | mapped |
 | Calendar | `/ongoings` | `p-pages p-pages-ongoings` | catalog grid, options, comments/editor | shared `main_code_*` | mapped |
 | About | `/about` | `p-pages p-pages-about` | lists, stats chart, comments/editor | shared `main_code_*` | mapped |
 | Utility indexes | `/useful`, `/contests`, `/moderations` | `p-user_tools-index`; `p-contests-index`; `p-moderations-show` | sparse/empty page shells and moderation link lists | shared `main_code_*` | mapped |
@@ -54,5 +54,5 @@ Populate after the `.rip` checkpoint by comparing equivalent templates.
 - Local branch: `codex/shikimori-compatibility`.
 - Remote fork setup is waiting for GitHub CLI re-authentication.
 - Public and safe authenticated `.rip` templates above are mapped without storing account content.
-- Detail-state follow-up remains for an individual dialog and any page-specific popup discovered during CSS work.
+- An individual dialog is currently unavailable because the account dialog list is empty; page-specific popups remain follow-up during CSS work.
 - No compatibility CSS changes have been made yet.
