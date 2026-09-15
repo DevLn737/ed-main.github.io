@@ -2,7 +2,7 @@
 
 ## Status
 
-The implementation plan is approved. The `shikimori.rip` compatibility map is in progress; CSS work starts after the planned fork setup.
+The implementation plan is approved. Core `shikimori.rip` coverage and optional-module compatibility are verified; minimal generator repair is the next phase.
 
 ## Goal
 
