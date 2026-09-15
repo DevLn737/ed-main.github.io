@@ -20,7 +20,8 @@
  /*------------------*/
  .p-profiles-favorites .cc-favourites > .c-character,
  .p-profiles-favorites .cc-favourites > .c-anime,
- .p-profiles-favorites .cc-favourites > .c-manga {
+ .p-profiles-favorites .cc-favourites > .c-manga,
+ .p-profiles-favorites .cc-favourites > .c-visual_novel {
   width: calc(100% / 5 - 1 * 1.1%);
   height: 100%;
   filter: contrast(102%);
@@ -30,7 +31,8 @@
  }
  .p-profiles-favorites .cc-favourites > .c-character .image-cutter,
  .p-profiles-favorites .cc-favourites > .c-anime .image-cutter,
- .p-profiles-favorites .cc-favourites > .c-manga .image-cutter {
+ .p-profiles-favorites .cc-favourites > .c-manga .image-cutter,
+ .p-profiles-favorites .cc-favourites > .c-visual_novel .image-cutter {
   height: 0;
   padding-bottom: 59%;
   background-color: #333;
@@ -43,7 +45,8 @@
  }
  .p-profiles-favorites .cc-favourites > .c-character .title.two_lined,
  .p-profiles-favorites .cc-favourites > .c-anime .title.two_lined,
- .p-profiles-favorites .cc-favourites > .c-manga .title.two_lined {
+ .p-profiles-favorites .cc-favourites > .c-manga .title.two_lined,
+ .p-profiles-favorites .cc-favourites > .c-visual_novel .title.two_lined {
   text-align: center;
   display: none;
   /*------------------*/
@@ -143,7 +146,8 @@
  } /*убрать только Людей*/
 
  .p-profiles .cc-favourites .c-anime .cover .image-decor::before,
- .p-profiles .cc-favourites .c-manga .cover .image-decor::before {
+ .p-profiles .cc-favourites .c-manga .cover .image-decor::before,
+ .p-profiles .cc-favourites .c-visual_novel .cover .image-decor::before {
   content: "";
   display: flex;
   position: absolute;
@@ -168,12 +172,14 @@
   text-shadow: 1px 0 2px #000000bf, -1px 0 2px #000000bf, 0 1px 2px #000000bf, 0 -1px 2px #000000bf, 1px 0 2px #000000bf, -1px 0 2px #000000bf, 0 1px 2px #000000bf, 0 -1px 2px #000000bf;
  }
  .p-profiles .cc-favourites > .c-anime:hover .cover .image-decor::before,
- .p-profiles .cc-favourites > .c-manga:hover .cover .image-decor::before {
+ .p-profiles .cc-favourites > .c-manga:hover .cover .image-decor::before,
+ .p-profiles .cc-favourites > .c-visual_novel:hover .cover .image-decor::before {
   opacity: 1;
   background: rgba(var(--block-color), 0.6);
  }
  .p-profiles .cc-favourites > .c-anime .cover .image-cutter::before,
- .p-profiles .cc-favourites > .c-manga .cover .image-cutter::before {
+ .p-profiles .cc-favourites > .c-manga .cover .image-cutter::before,
+ .p-profiles .cc-favourites > .c-visual_novel .cover .image-cutter::before {
   position: absolute;
   display: flex;
   content: "";
@@ -260,6 +266,8 @@
   .p-profiles .cc-favourites .c-anime a .image-cutter::before,
   .p-profiles .cc-favourites .c-manga a .image-decor::before,
   .p-profiles .cc-favourites .c-manga a .image-cutter::before,
+  .p-profiles .cc-favourites .c-visual_novel a .image-decor::before,
+  .p-profiles .cc-favourites .c-visual_novel a .image-cutter::before,
   .p-profiles .cc-favourites .c-character a .image-cutter::before,
   .p-profiles .cc-favourites .c-character a .image-decor::before {
     font-size: 0;

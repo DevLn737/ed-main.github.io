@@ -58,10 +58,10 @@
     font-family: 'FontAwesome';
     padding-top: 0px;
 }
-  .l-top_menu-v2 .menu-dropdown.profile .submenu > .icon-manga_list:hover:before, .l-top_menu-v2 .menu-dropdown.profile .submenu > .icon-anime_list:hover:before {
+  .l-top_menu-v2 .menu-dropdown.profile .submenu > .icon-manga_list:hover:before, .l-top_menu-v2 .menu-dropdown.profile .submenu > .icon-anime_list:hover:before, .l-top_menu-v2 .menu-dropdown.profile .submenu > .icon-visual_novel_list:hover:before {
     opacity: 0.6;
 }
- .l-top_menu-v2 .menu-dropdown.profile .submenu > .icon-manga_list:after, .l-top_menu-v2 .menu-dropdown.profile .submenu > .icon-anime_list:after {
+ .l-top_menu-v2 .menu-dropdown.profile .submenu > .icon-manga_list:after, .l-top_menu-v2 .menu-dropdown.profile .submenu > .icon-anime_list:after, .l-top_menu-v2 .menu-dropdown.profile .submenu > .icon-visual_novel_list:after {
     position: absolute;
     top: 0;
     height: 100%;
@@ -92,32 +92,56 @@
   .l-top_menu-v2 .menu-dropdown.profile .submenu > .icon-manga_list:after {
     content: 'МАНГА';
 }
+  .l-top_menu-v2 .menu-dropdown.profile .submenu > .icon-visual_novel_list:before {
+    width: 55px;
+    color: rgba(var(--bright-color), 0.2);
+    font-size: 22px;
+    position: relative;
+}
+  .l-top_menu-v2 .menu-dropdown.profile .submenu > .icon-visual_novel_list:after {
+    content: 'VN';
+}
+a.icon-profile {
+    order: 0;
+}
 a.icon-anime_list {
     order: 1;
 }
 a.icon-manga_list {
     order: 2;
 }
-a.icon-mail {
+a.icon-visual_novel_list {
     order: 3;
 }
-a.icon-settings {
+a.icon-mail {
     order: 4;
 }
 a.icon-achievements {
     order: 5;
 }
+a.icon-settings {
+    order: 10;
+}
 a.icon-clubs {
     order: 6;
 }
-a.icon-site_rules {
+a.icon-collections {
     order: 7;
 }
-a.icon-faq {
+a.icon-publications {
     order: 8;
 }
-a.icon-sign_out {
+a.icon-custom_lists {
     order: 9;
+}
+a.icon-site_rules {
+    order: 11;
+}
+a.icon-faq {
+    order: 12;
+}
+a.icon-sign_out {
+    order: 13;
 }
     .l-top_menu-v2 .menu-dropdown>span a {
     width: 60px;
