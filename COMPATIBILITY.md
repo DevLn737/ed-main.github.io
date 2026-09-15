@@ -47,12 +47,24 @@ Populate after the `.rip` checkpoint by comparing equivalent templates.
 
 | Module | Intended surface | Result | Status |
 | --- | --- | --- | --- |
-| `q01`–`q12` | See `engitheme/config/theme_files.json` | Pending `.rip` core coverage | mapped |
+| `q01` | Alternate user menu | Pending `.rip` core coverage | mapped |
+| `q02` | Monocolor Citrus anime/manga lists | Pending Citrus code check | mapped |
+| `q03` | History entry-type markers | Pending profile history check | mapped |
+| `q04` | Poster rating module in About Me | Deliberately reduced to an empty rule in project version 4.38; do not restore without evidence of current markup | limited |
+| `q05` | Animated activity graph | Pending profile activity check | mapped |
+| `q06` | Centered Over avatar | Pending Over code check | mapped |
+| `q07` | Normal-width Over content with `q06` | Pending Over code check | mapped |
+| `q08` | Alternate site menu | Pending global navigation check | mapped |
+| `q09` | Modified favourites | Pending profile favourites check | mapped |
+| `q10` | About Me component library | Pending component/import check | mapped |
+| `q11` | Squarer corners | Pending changed-component selector check | mapped |
+| `q12` | Expandable Citrus Lite lists | Pending Citrus Lite code check | mapped |
 
 ## Current checkpoint
 
 - Local branch: `codex/shikimori-compatibility`.
-- Remote fork setup is waiting for GitHub CLI re-authentication.
+- Fork: `DevLn737/ed-main.github.io`; `origin` points to the fork and `upstream` to `ed-main/ed-main.github.io`.
+- The working branch is pushed and tracks `origin/codex/shikimori-compatibility`.
 - Public and safe authenticated `.rip` templates above are mapped without storing account content.
 - An individual dialog is currently unavailable because the account dialog list is empty; page-specific popups remain follow-up during CSS work.
 - No compatibility CSS changes have been made yet.
