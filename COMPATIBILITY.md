@@ -25,14 +25,14 @@ Statuses: `mapped`, `patched`, `verified`, `limited`.
 | Calendar | `/ongoings` | `p-pages p-pages-ongoings` | catalog grid, options, comments/editor | shared `main_code_*` | mapped |
 | About | `/about` | `p-pages p-pages-about` | lists, stats chart, comments/editor | shared `main_code_*` | mapped |
 | Utility indexes | `/useful`, `/contests`, `/moderations` | `p-user_tools-index`; `p-contests-index`; `p-moderations-show` | sparse/empty page shells and moderation link lists | shared `main_code_*` | mapped |
-| Global navigation/search | any mapped page | inherited page class | top menu, VN icons, random-page controls, opened global search modes/results/shade | shared `main_code_*` | mapped |
+| Global navigation/search | any mapped page | inherited page class | top menu, VN icons, random-page controls, opened global search modes/results/shade | `main_code_3.css` | verified |
 | Catalog filter states | `/animes` | `p-animes_collection p-animes_collection-index` | opened side menu; `genres_v2`; country mode toggle; season/range selectors; opened `year-dropdown` | shared `main_code_*` | mapped |
 
 ### Confirmed selector gaps
 
-- VN navigation and entries: `icon-visual_novel`, `icon-visual_novel_list`, `c-visual_novel`, `b-platform-tag`, `b-genre-tag`.
+- VN entries: `c-visual_novel`, `b-platform-tag`, `b-genre-tag`. VN navigation already inherits the established dropdown link rules.
 - MAL score presentation: `scores`, `mal-based`, `collection_score_mal_icon`.
-- Random-page controls: `random-anime-btn`, `random-anime-btn-mobile`, `random-anime-button`.
+- Random-page controls: `random-anime-btn` and `random-anime-btn-mobile` patched to inherit search colors; `random-anime-button` already inherits `b-link_button`.
 - Catalog controls: `season-selector*`, `range-selector*`, `year-dropdown*`, and `genres_v2`.
 - Global search is substantially covered; only the newer `is-search-shade` state has no direct selector.
 
@@ -65,6 +65,7 @@ Populate after the `.rip` checkpoint by comparing equivalent templates.
 - Local branch: `codex/shikimori-compatibility`.
 - Fork: `DevLn737/ed-main.github.io`; `origin` points to the fork and `upstream` to `ed-main/ed-main.github.io`.
 - The working branch is pushed and tracks `origin/codex/shikimori-compatibility`.
+- Global navigation/search package verified in browser CSSOM with no size/layout change; the temporary verification style was removed.
 - Public and safe authenticated `.rip` templates above are mapped without storing account content.
 - An individual dialog is currently unavailable because the account dialog list is empty; page-specific popups remain follow-up during CSS work.
 - No compatibility CSS changes have been made yet.

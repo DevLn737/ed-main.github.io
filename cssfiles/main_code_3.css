@@ -3098,7 +3098,15 @@ body.p-achievements.p-profiles .l-top_menu-v2 {
     width: 50px;
     color: rgba(var(--light-color), 0.8);
 }
-body.p-achievements.p-profiles .l-top_menu-v2 .global-search .search-marker {
+
+.l-top_menu-v2 .random-anime-btn,
+.l-top_menu-v2 .random-anime-btn-mobile {
+    color: rgba(var(--light-color), 0.8);
+}
+
+body.p-achievements.p-profiles .l-top_menu-v2 .global-search .search-marker,
+body.p-achievements.p-profiles .l-top_menu-v2 .random-anime-btn,
+body.p-achievements.p-profiles .l-top_menu-v2 .random-anime-btn-mobile {
     color: rgba(255, 225, 167, 0.8);
 }
 .l-top_menu-v2 .global-search .hotkey-marker {
@@ -3129,10 +3137,14 @@ body.p-achievements.p-profiles .l-top_menu-v2 .global-search .hotkey-marker {
 body.p-achievements.p-profiles .l-top_menu-v2 .global-search .clear {
     color: rgba(255, 225, 167, 0.3);
 }
-.l-top_menu-v2.is-search-focus .global-search .search-marker {
+.l-top_menu-v2.is-search-focus .global-search .search-marker,
+.l-top_menu-v2.is-search-focus .random-anime-btn,
+.l-top_menu-v2.is-search-focus .random-anime-btn-mobile {
     color: rgba(var(--white-color), 0.7);
 }
-body.p-achievements.p-profiles .l-top_menu-v2.is-search-focus .global-search .search-marker {
+body.p-achievements.p-profiles .l-top_menu-v2.is-search-focus .global-search .search-marker,
+body.p-achievements.p-profiles .l-top_menu-v2.is-search-focus .random-anime-btn,
+body.p-achievements.p-profiles .l-top_menu-v2.is-search-focus .random-anime-btn-mobile {
     color: rgba(255, 247, 232, 0.7);
 }
 
