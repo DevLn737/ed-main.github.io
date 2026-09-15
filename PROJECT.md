@@ -2,7 +2,7 @@
 
 ## Status
 
-The project is awaiting a dedicated planning pass. Do not begin the site audit, implementation, refactoring, or deployment until the user explicitly authorizes work after that pass.
+The implementation plan is approved. The `shikimori.rip` compatibility map is in progress; CSS work starts after the planned fork setup.
 
 ## Goal
 
