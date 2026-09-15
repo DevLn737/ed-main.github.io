@@ -3754,6 +3754,10 @@ body.p-achievements.p-profiles .b-list_switchers > *:hover:after {
 }
 
 /* Feedback section */
+.critique-stars .star-line .title {
+    color: rgba(var(--white-color), var(--hundred));
+}
+
 .b-critique_votes .votes-for {
     color: #4abc56;
 }
