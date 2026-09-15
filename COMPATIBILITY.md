@@ -9,10 +9,10 @@ Statuses: `mapped`, `patched`, `verified`, `limited`.
 | Area | Representative URL | Body page class | States/components | CSS scope | Status |
 | --- | --- | --- | --- | --- | --- |
 | Home | `/` | `p-dashboards p-dashboards-show` | catalog entries, news/topic previews, reviews, quotes, spoilers | shared `main_code_*` | mapped |
-| Anime/manga/ranobe catalogs | `/animes`, `/mangas`, `/ranobe` | `p-animes_collection p-animes_collection-index` | pagination, catalog entries, collection filters, season/year/range selectors | shared `main_code_*` | mapped |
-| VN catalog | `/visual_novels` | `p-animes_collection p-animes_collection-index` | `c-visual_novel`, VN navigation/list icons, filters | shared `main_code_*` | mapped |
-| Anime/manga/ranobe entries | `/animes/52991-sousou-no-frieren`, `/mangas/4632-oyasumi-punpun`, `/ranobe/102875-fata-morgana-no-yakata-anata-no-genten-ni-itaru-monogatari` | `p-*-show p-db_entries p-db_entries-show p-animes p-animes-show` | poster actions, user rate, MAL/Shikimori scores, metadata, related entries, comments | shared `main_code_*` | mapped |
-| VN entry | `/visual_novels/37866-of-the-devil` | `p-visual_novels p-visual_novels-show p-db_entries p-db_entries-show p-animes p-animes-show` | platform/genre tags, VN rate, screenshots, empty comments | shared `main_code_*` | mapped |
+| Anime/manga/ranobe catalogs | `/animes`, `/mangas`, `/ranobe` | `p-animes_collection p-animes_collection-index` | pagination, catalog entries, collection filters, season/year/range selectors | `main_code_3.css` | verified |
+| VN catalog | `/visual_novels` | `p-animes_collection p-animes_collection-index` | `c-visual_novel`, VN navigation/list icons, filters | shared `main_code_*` | verified |
+| Anime/manga/ranobe entries | `/animes/52991-sousou-no-frieren`, `/mangas/4632-oyasumi-punpun`, `/ranobe/102875-fata-morgana-no-yakata-anata-no-genten-ni-itaru-monogatari` | `p-*-show p-db_entries p-db_entries-show p-animes p-animes-show` | poster actions, user rate, MAL/Shikimori scores, metadata, related entries, comments | `main_code_1.css`, `main_code_4mob.css` | verified |
+| VN entry | `/visual_novels/37866-of-the-devil` | `p-visual_novels p-visual_novels-show p-db_entries p-db_entries-show p-animes p-animes-show` | platform/genre tags, VN rate, screenshots, empty comments | `main_code_1.css`, `main_code_2.css`, `main_code_4mob.css` | verified |
 | Forum | `/forum`, `/forum/offtopic/5003548-spisok-izmeneniy` | `p-topics p-topics-index/show` | topic variants, editor shell, comments, quotes, spoilers, media | shared `main_code_*` | mapped |
 | Critiques | `/forum/critiques` | `p-topics p-topics-index` | critique topics, ratings/votes, shortened text | shared `main_code_*` | mapped |
 | Clubs | `/clubs`, `/clubs/90-klub-druzey` | `p-clubs p-clubs-index/show` | club cards/menu, users, comments, editor shell | shared `main_code_*` | mapped |
@@ -26,12 +26,12 @@ Statuses: `mapped`, `patched`, `verified`, `limited`.
 | About | `/about` | `p-pages p-pages-about` | lists, stats chart, comments/editor | shared `main_code_*` | mapped |
 | Utility indexes | `/useful`, `/contests`, `/moderations` | `p-user_tools-index`; `p-contests-index`; `p-moderations-show` | sparse/empty page shells and moderation link lists | shared `main_code_*` | mapped |
 | Global navigation/search | any mapped page | inherited page class | top menu, VN icons, random-page controls, opened global search modes/results/shade | `main_code_3.css` | verified |
-| Catalog filter states | `/animes` | `p-animes_collection p-animes_collection-index` | opened side menu; `genres_v2`; country mode toggle; season/range selectors; opened `year-dropdown` | shared `main_code_*` | mapped |
+| Catalog filter states | `/animes` | `p-animes_collection p-animes_collection-index` | opened side menu; `genres_v2`; country mode toggle; season/range selectors; opened `year-dropdown` | `main_code_3.css` | verified |
 
 ### Confirmed selector gaps
 
-- VN entries: `c-visual_novel`, `b-platform-tag`, `b-genre-tag`. VN navigation already inherits the established dropdown link rules.
-- MAL score presentation: `scores`, `mal-based`, `collection_score_mal_icon`.
+- VN tags and responsive entry types are patched. VN navigation and catalog cards already inherit established generic rules.
+- MAL score presentation: `mal-based` patched; `scores` and `collection_score_mal_icon` already inherit sufficient parent rules.
 - Random-page controls: `random-anime-btn` and `random-anime-btn-mobile` patched to inherit search colors; `random-anime-button` already inherits `b-link_button`.
 - Catalog controls: `season-selector*`, `range-selector*`, `year-dropdown*`, and `genres_v2`.
 - Global search is substantially covered; only the newer `is-search-shade` state has no direct selector.
@@ -66,6 +66,7 @@ Populate after the `.rip` checkpoint by comparing equivalent templates.
 - Fork: `DevLn737/ed-main.github.io`; `origin` points to the fork and `upstream` to `ed-main/ed-main.github.io`.
 - The working branch is pushed and tracks `origin/codex/shikimori-compatibility`.
 - Global navigation/search package verified in browser CSSOM with no size/layout change; the temporary verification style was removed.
+- Catalog filters, MAL label and VN tags verified in browser CSSOM; temporary verification styles were removed. The responsive VN relation selector is retained by code analogy because the representative entry has no matching related VN card.
 - Public and safe authenticated `.rip` templates above are mapped without storing account content.
 - An individual dialog is currently unavailable because the account dialog list is empty; page-specific popups remain follow-up during CSS work.
 - No compatibility CSS changes have been made yet.

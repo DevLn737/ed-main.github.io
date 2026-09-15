@@ -322,7 +322,7 @@ body * [class*="_status_tag"]:not([data-text]) {
     padding: 2px 9px;
 }
 
-.line .value .b-tag:before, .tags .b-tag:before {
+.line .value .b-tag:before, .line .value .b-platform-tag:before, .line .value .b-genre-tag:before, .tags .b-tag:before {
     background: rgba(var(--block-color), 1);
     content: '';
     width: 100%;
@@ -332,6 +332,11 @@ body * [class*="_status_tag"]:not([data-text]) {
     height: 100%;
     z-index: -1;
     border-radius: 10px;
+}
+
+.line .b-platform-tag,
+.line .b-genre-tag {
+    background: unset !important;
 }
 
 .line [class*="_status_tag"].other::before {

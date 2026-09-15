@@ -386,6 +386,8 @@ textarea {
 .tags > *,
 .line .b-tag,
 .tags .b-tag,
+.line .b-platform-tag,
+.line .b-genre-tag,
 .b-forums .reload,
 .p-animes-show .other-names,
 .p-mangas-show .other-names,
@@ -416,6 +418,8 @@ textarea {
 
 .tags > .tag-link,
 .line .b-tag,
+.line .b-platform-tag,
+.line .b-genre-tag,
 .b-forums .reload,
 .p-animes-show .other-names,
 .p-mangas-show .other-names,
@@ -442,6 +446,8 @@ textarea {
 .tags .b-anime_status_tag:hover,
 .tags .b-tag:hover,
 .line .b-tag:hover,
+.line .b-platform-tag:hover,
+.line .b-genre-tag:hover,
 .line .tag:hover,
 .b-forums .reload:hover,
 .p-animes-show .other-names:hover,
@@ -721,7 +727,8 @@ a:hover .title span {
     color: rgba(var(--dark-color), 1);
 }
 
-.b-rate .text-score {
+.b-rate .text-score,
+.mal-based {
     color: rgba(var(--light-color), 1);
 }
 
@@ -1761,7 +1768,9 @@ header.head a.edit,
     border-color: transparent !important;
 }
 
-.b-tag {
+.b-tag,
+.line .b-platform-tag,
+.line .b-genre-tag {
     border-bottom: 1px dashed rgba(var(--bright-color), 1);
     color: rgba(var(--bright-color), 1);
 }
