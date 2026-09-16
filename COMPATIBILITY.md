@@ -61,6 +61,14 @@ Populate after the `.rip` checkpoint by comparing equivalent templates.
 | `q11` | Squarer corners | Global selector already covers new controls and VN components; code-only check | verified |
 | `q12` | Expandable Citrus Lite lists | Citrus Lite-only selectors match current anime/manga profile stats DOM | verified |
 
+## Generator
+
+| Area | Result | Status |
+| --- | --- | --- |
+| Theme asset loading | Uses the repository-relative `engitheme` directory locally and on GitHub Pages instead of the retired upstream site | verified |
+| Profile formats | Shikista, Citrus, Citrus Lite and Over generate from their current sources | verified |
+| BigShot | The only source is the original `.booody` placeholder from the initial commit; the format has deliberately remained hidden since commit `1685cfa` and no original profile CSS exists in repository history or GitHub code search | limited |
+
 ## Current checkpoint
 
 - Local branch: `codex/shikimori-compatibility`.
@@ -74,3 +82,4 @@ Populate after the `.rip` checkpoint by comparing equivalent templates.
 - Public and safe authenticated `.rip` templates above are mapped without storing account content.
 - An individual dialog is currently unavailable because the account dialog list is empty; page-specific popups remain follow-up during CSS work.
 - Core `.rip` compatibility changes are present in `main_code_1.css`, `main_code_2.css`, `main_code_3.css`, and `main_code_4mob.css`.
+- The generator now loads its checked-out `engitheme` assets. BigShot remains hidden because there is no original style to preserve or repair.

@@ -597,7 +597,7 @@ var vm = new Vue({
       // Определение пути загрузки файлов
       var base;
       if (branch == 'main') {
-        base = 'https://ed-main.github.io/engitheme'
+        base = './engitheme'
       } else {
         base = '' + branch;
       }
@@ -761,7 +761,7 @@ var vm = new Vue({
 
     // Загрузка файлов
     switchDisabled(document.getElementById('create_css'));
-    this.switchBranches(window.location.hostname == 'https://ed-main.github.io/engitheme' ? 'master' : 'main');
+    this.switchBranches('main');
   },
 });
 

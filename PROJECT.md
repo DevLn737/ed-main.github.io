@@ -2,7 +2,7 @@
 
 ## Status
 
-The implementation plan is approved. Core `shikimori.rip` coverage and optional-module compatibility are verified; minimal generator repair is the next phase.
+The implementation plan is approved. Core `shikimori.rip` coverage and optional-module compatibility are verified. Minimal generator asset loading is repaired; `shikimori.io` comparison is the next phase.
 
 ## Goal
 
