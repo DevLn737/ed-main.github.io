@@ -74,6 +74,8 @@ Statuses: `mapped`, `patched`, `verified`, `limited`.
 | --- | --- | --- |
 | Theme asset loading | Uses the repository-relative `engitheme` directory locally and on GitHub Pages instead of the retired upstream site | verified |
 | Profile formats | Shikista, Citrus, Citrus Lite and Over generate from their current sources | verified |
+| Optional-file generation | `q01`–`q12` compile through the generator in their intended formats; `q07` is paired with its required `q06` base | verified |
+| Fork release paths | Preview assets are repository-relative; generated imports and repository/branch links target `DevLn737/ed-main.github.io` | verified |
 | BigShot | The only source is the original `.booody` placeholder from the initial commit; the format has deliberately remained hidden since commit `1685cfa` and no original profile CSS exists in repository history or GitHub code search | limited |
 
 ## Current checkpoint
@@ -92,3 +94,4 @@ Statuses: `mapped`, `patched`, `verified`, `limited`.
 - The generator now loads its checked-out `engitheme` assets. BigShot remains hidden because there is no original style to preserve or repair.
 - Public `.io` templates were compared with their `.rip` counterparts. New catalog filters, MAL/watch controls, anime top, recommendations and tier-list components are mapped to the existing palette without changing their layout or semantic rank colors.
 - The `.io` package was verified on its four new component families; `.io` has no visual-novel section.
+- Generator compilation was exercised for every optional wrapper; release imports now point at the fork's `master` publication branch. Theme version is `4.38.0`.

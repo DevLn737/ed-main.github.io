@@ -686,7 +686,7 @@ var vm = new Vue({
       event.target.setAttribute('disabled', 'disabled');
 
       // Загрузка списка веток
-      XHR('https://ed-main.github.io/engitheme', function(list) {
+      XHR('https://api.github.com/repos/DevLn737/ed-main.github.io/branches', function(list) {
         var branches = JSON.parse(list);
 
         vm.status.isBranchLoaded = true;

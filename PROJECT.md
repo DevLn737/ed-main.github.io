@@ -2,7 +2,7 @@
 
 ## Status
 
-The implementation plan is approved. Core `shikimori.rip` and `shikimori.io` compatibility are verified, optional-module compatibility is recorded, and minimal generator asset loading is repaired. Release-path updates and final checks remain.
+The implementation plan is approved. Core `shikimori.rip` and `shikimori.io` compatibility are verified, optional-module compatibility is recorded, minimal generator asset loading is repaired, and fork release paths are prepared. Publication and public verification remain.
 
 ## Goal
 
