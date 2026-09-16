@@ -39,10 +39,17 @@ Statuses: `mapped`, `patched`, `verified`, `limited`.
 
 ## shikimori.io
 
-Populate after the `.rip` checkpoint by comparing equivalent templates.
-
 | Area | Representative URL | Body page class | Differences from `.rip` | CSS scope | Status |
 | --- | --- | --- | --- | --- | --- |
+| Home and shared navigation | `/` | `p-dashboards p-dashboards-show` | public menu adds Top, Tierlists and Recommendations; VN is absent | shared `main_code_*` | verified |
+| Anime/manga/ranobe catalogs | `/animes`, `/mangas`, `/ranobe` | `p-animes_collection p-animes_collection-index` | new `c-filters`, `c-ms-*` and `c-score-*` controls | `main_code_3.css` | verified |
+| Anime/manga/ranobe entries | `/animes/52991-sousou-no-frieren` and equivalent entries | shared database-entry classes | MAL score and watch banner additions | `main_code_1.css` | verified |
+| Social and utility indexes | `/forum`, `/forum/critiques`, `/clubs`, `/collections`, `/articles`, `/users`, `/contests`, `/ongoings`, `/about` | same template families as `.rip` | public unauthenticated states; no additional component family | shared `main_code_*` | verified |
+| Anime top | `/animes/top` | `p-animes_collection p-animes_collection-index` | `b-top_tabs` and `b-top_place` | `main_code_2.css` | verified |
+| Recommendations | `/recommendations` | `p-recommendations` | dedicated `reco-*` hero, login, tiles and score elements | `main_code_2.css` | verified |
+| Tierlists | `/tierlists`, `/tierlists/1126-potselovat-zhenitsya-ubit` | shared listing classes; database-entry detail shell | listing reuses new filters; detail adds `tl-*` board components | `main_code_2.css`, `main_code_3.css` | verified |
+| Public profile | public profile representative | `p-profiles p-profiles-show` | public unauthenticated state only | shared and `prof_form_*` | verified |
+| Visual novels | `/visual_novels` | n/a | section is not present on `.io`; route falls through to a profile path | n/a | limited |
 
 ## Optional modules
 
@@ -83,3 +90,5 @@ Populate after the `.rip` checkpoint by comparing equivalent templates.
 - An individual dialog is currently unavailable because the account dialog list is empty; page-specific popups remain follow-up during CSS work.
 - Core `.rip` compatibility changes are present in `main_code_1.css`, `main_code_2.css`, `main_code_3.css`, and `main_code_4mob.css`.
 - The generator now loads its checked-out `engitheme` assets. BigShot remains hidden because there is no original style to preserve or repair.
+- Public `.io` templates were compared with their `.rip` counterparts. New catalog filters, MAL/watch controls, anime top, recommendations and tier-list components are mapped to the existing palette without changing their layout or semantic rank colors.
+- The `.io` package was verified on its four new component families; `.io` has no visual-novel section.
