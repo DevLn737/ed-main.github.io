@@ -314,7 +314,8 @@ body#profiles_edit .b-to-top .slide:before {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.b-block_list li:hover {
+.b-block_list li:hover,
+.b-collection-filters .year-dropdown_list li:hover {
     color: rgba(var(--hover-color), 1) !important;
     transition: 0s ease-out;
     background: rgba(var(--shadows-color), 0.15);
@@ -322,7 +323,8 @@ body#profiles_edit .b-to-top .slide:before {
     box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.2) !important;
 }
 
-.b-block_list li.selected {
+.b-block_list li.selected,
+.b-collection-filters .year-dropdown_list li.selected {
     color: rgba(var(--light-color), 1);
     transition: 0s ease-out;
     background: rgba(var(--shadows-color), 0.15);
@@ -330,7 +332,8 @@ body#profiles_edit .b-to-top .slide:before {
     box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.2) !important;
 }
 
-.b-block_list li.selected:hover {
+.b-block_list li.selected:hover,
+.b-collection-filters .year-dropdown_list li.selected:hover {
     color: rgba(var(--hover-color), 1) !important;
 }
 
@@ -409,6 +412,137 @@ body#profiles_edit .b-to-top .slide:before {
     vertical-align: top;
     position: absolute;
     right: 10px;
+}
+
+.b-collection-filters .mode-toggle,
+.b-collection-filters .season-selector-box {
+    background: rgba(var(--block-color), 0.4);
+    border: none;
+}
+
+.b-collection-filters .mode-toggle[data-value="or"] .mode-toggle_option-or,
+.b-collection-filters .mode-toggle[data-value="and"] .mode-toggle_option-and {
+    color: rgba(var(--light-color), 1);
+}
+
+.b-collection-filters .mode-toggle[data-value="or"] .mode-toggle_option-and,
+.b-collection-filters .mode-toggle[data-value="and"] .mode-toggle_option-or,
+.b-collection-filters a.range-selector_reset {
+    color: rgba(var(--dark-color), 1);
+}
+
+.b-collection-filters .mode-toggle_thumb {
+    background: rgba(var(--buttoms-color), 0.7);
+}
+
+.b-collection-filters .year-dropdown_trigger,
+.b-collection-filters select.season-selector_season,
+.b-collection-filters .season-selector_add,
+.b-collection-filters .range-selector_apply,
+.b-collection-filters .range-selector-box_hint {
+    background: rgba(var(--block-color), 0.5);
+    color: rgba(var(--light-color), 1);
+    border: none;
+}
+
+.b-collection-filters .range-selector_input {
+    background: rgba(var(--block-color), 0.4);
+    color: rgba(var(--light-color), 1);
+    border: none;
+}
+
+.b-collection-filters .year-dropdown_list,
+.b-collection-filters .range-selector-box_hint_popup {
+    background: rgba(var(--menu-back), 1);
+    color: rgba(var(--light-color), 1);
+    border: none;
+}
+
+.b-collection-filters .year-dropdown_trigger:hover,
+.b-collection-filters .season-selector_add:hover,
+.b-collection-filters .range-selector_apply:hover,
+.b-collection-filters .range-selector-box_hint:hover {
+    background-color: rgba(var(--hover-buttoms-2), 0.6);
+    color: #e4e4e4;
+}
+
+.b-collection-filters a.range-selector_reset:hover {
+    color: rgba(var(--hover-color), 1);
+}
+
+/* shikimori.io catalog and tier-list filters */
+.c-filters .c-ms-title {
+    color: rgba(var(--dark-color), 1);
+}
+
+.c-filters .c-filter-select,
+.c-filters .c-ms-control,
+.c-filters .c-score-input {
+    color: rgba(var(--light-color), 1);
+    background: rgba(var(--block-color), 0.4);
+    border-color: rgba(var(--dark-color), 0.4);
+    box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.07);
+}
+
+.c-filters .c-ms-placeholder {
+    color: rgba(var(--dark-color), 0.8);
+}
+
+.c-filters .c-ms.is-filled .c-ms-control,
+.c-filters .c-score.is-filled .c-score-input,
+.c-filters .c-score-input:focus {
+    border-color: rgba(var(--bright-color), 1);
+}
+
+.c-filters .c-ms-dropdown {
+    color: rgba(var(--light-color), 1);
+    background: rgba(var(--menu-back), 0.95);
+    border-color: rgba(var(--dark-color), 0.4);
+    box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.2);
+}
+
+.c-filters .c-ms-search {
+    color: rgba(var(--light-color), 1);
+    border-bottom-color: rgba(var(--dark-color), 0.4);
+}
+
+.c-filters .c-ms-option:hover {
+    color: rgba(var(--hover-color), 1);
+    background: rgba(var(--shadows-color), 0.15);
+}
+
+.c-filters .c-ms-option .c-ms-option-mark {
+    border-color: rgba(var(--dark-color), 0.4);
+}
+
+.c-filters .c-ms-option.is-on {
+    color: rgba(var(--bright-color), 1);
+}
+
+.c-filters .c-ms-option.is-on .c-ms-option-mark {
+    background-color: rgba(var(--bright-color), 1);
+    border-color: rgba(var(--bright-color), 1);
+}
+
+.c-filters .c-score-preset {
+    color: rgba(var(--light-color), 1);
+    border-color: rgba(var(--dark-color), 0.4);
+}
+
+.c-filters .c-score-preset:hover {
+    color: rgba(var(--hover-color), 1);
+    border-color: rgba(var(--hover-color), 1);
+}
+
+.c-filters .c-score-preset.is-on {
+    color: rgba(var(--white-color), 1);
+    background: rgba(var(--bright-color), 1);
+    border-color: rgba(var(--bright-color), 1);
+}
+
+.c-filters .c-ms-chip:not(.is-off) {
+    color: rgba(var(--white-color), 1);
+    background: rgba(var(--bright-color), 1);
 }
 
 .b-question:before {
@@ -3098,7 +3232,15 @@ body.p-achievements.p-profiles .l-top_menu-v2 {
     width: 50px;
     color: rgba(var(--light-color), 0.8);
 }
-body.p-achievements.p-profiles .l-top_menu-v2 .global-search .search-marker {
+
+.l-top_menu-v2 .random-anime-btn,
+.l-top_menu-v2 .random-anime-btn-mobile {
+    color: rgba(var(--light-color), 0.8);
+}
+
+body.p-achievements.p-profiles .l-top_menu-v2 .global-search .search-marker,
+body.p-achievements.p-profiles .l-top_menu-v2 .random-anime-btn,
+body.p-achievements.p-profiles .l-top_menu-v2 .random-anime-btn-mobile {
     color: rgba(255, 225, 167, 0.8);
 }
 .l-top_menu-v2 .global-search .hotkey-marker {
@@ -3129,10 +3271,14 @@ body.p-achievements.p-profiles .l-top_menu-v2 .global-search .hotkey-marker {
 body.p-achievements.p-profiles .l-top_menu-v2 .global-search .clear {
     color: rgba(255, 225, 167, 0.3);
 }
-.l-top_menu-v2.is-search-focus .global-search .search-marker {
+.l-top_menu-v2.is-search-focus .global-search .search-marker,
+.l-top_menu-v2.is-search-focus .random-anime-btn,
+.l-top_menu-v2.is-search-focus .random-anime-btn-mobile {
     color: rgba(var(--white-color), 0.7);
 }
-body.p-achievements.p-profiles .l-top_menu-v2.is-search-focus .global-search .search-marker {
+body.p-achievements.p-profiles .l-top_menu-v2.is-search-focus .global-search .search-marker,
+body.p-achievements.p-profiles .l-top_menu-v2.is-search-focus .random-anime-btn,
+body.p-achievements.p-profiles .l-top_menu-v2.is-search-focus .random-anime-btn-mobile {
     color: rgba(255, 247, 232, 0.7);
 }
 

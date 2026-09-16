@@ -3,6 +3,10 @@
   -webkit-border-radius: 14px;
   -moz-border-radius: 14px;
   border-radius: 14px;
+  -webkit-animation: fluctuations 2.5s 0s infinite linear;
+  -moz-animation: fluctuations 2.5s 0s infinite linear;
+  -o-animation: fluctuations 2.5s 0s infinite linear;
+  animation: fluctuations 2.5s 0s infinite linear;
 }
 .bar.vertical .line .bar-container .bar {
   background: transparent;

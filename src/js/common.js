@@ -597,7 +597,7 @@ var vm = new Vue({
       // Определение пути загрузки файлов
       var base;
       if (branch == 'main') {
-        base = 'https://ed-main.github.io/engitheme'
+        base = './engitheme'
       } else {
         base = '' + branch;
       }
@@ -686,7 +686,7 @@ var vm = new Vue({
       event.target.setAttribute('disabled', 'disabled');
 
       // Загрузка списка веток
-      XHR('https://ed-main.github.io/engitheme', function(list) {
+      XHR('https://api.github.com/repos/DevLn737/ed-main.github.io/branches', function(list) {
         var branches = JSON.parse(list);
 
         vm.status.isBranchLoaded = true;
@@ -761,7 +761,7 @@ var vm = new Vue({
 
     // Загрузка файлов
     switchDisabled(document.getElementById('create_css'));
-    this.switchBranches(window.location.hostname == 'https://ed-main.github.io/engitheme' ? 'master' : 'main');
+    this.switchBranches('main');
   },
 });
 

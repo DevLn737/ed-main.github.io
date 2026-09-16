@@ -206,10 +206,16 @@
 
     .p-animes-show .cc .c-anime,
     .p-animes-show .cc .c-manga,
+    .p-animes-show .cc .c-visual_novel,
     .p-mangas-show .cc .c-anime,
     .p-mangas-show .cc .c-manga,
+    .p-mangas-show .cc .c-visual_novel,
     .p-ranobe-show .cc .c-anime,
-    .p-ranobe-show .cc .c-manga {
+    .p-ranobe-show .cc .c-manga,
+    .p-ranobe-show .cc .c-visual_novel,
+    .p-visual_novels-show .cc .c-anime,
+    .p-visual_novels-show .cc .c-manga,
+    .p-visual_novels-show .cc .c-visual_novel {
         margin: 0 5px !important;
         width: calc(14.28% - 10px);
     }

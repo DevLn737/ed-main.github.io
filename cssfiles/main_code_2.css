@@ -1,6 +1,6 @@
 /*2104*/
 .l-footer:before {
-    content: 'E-design v.4.37.3';
+    content: 'E-design v.4.38.0';
 }
 .b-club .name-logo .name {
     transition: 1s ease;
@@ -144,6 +144,82 @@
 
 .p-recommendations-index .b-header_filters .hint, .b-header_filters .filter-line .title {
     color: rgba(var(--bright-color), var(--hundred));
+}
+
+/* shikimori.io recommendations */
+.p-recommendations .reco-hero,
+.p-recommendations .reco .reco-login.is-compact,
+.p-recommendations .reco-tile {
+    background: rgba(var(--block-color), 0.6);
+    box-shadow: 0 2px 6px 2px rgba(var(--shadows-color), 0.25);
+}
+
+.p-recommendations .reco-hero .reco-hero-card {
+    background: rgba(var(--shadows-color), 0.15);
+}
+
+.p-recommendations .reco-hero .reco-hero-sub,
+.p-recommendations .reco-tile .reco-tile-meta {
+    color: rgba(var(--dark-color), 0.8);
+}
+
+.p-recommendations .reco-hero h1,
+.p-recommendations .reco-login h2,
+.p-recommendations .reco-tile-name,
+.p-recommendations .reco-popular-title {
+    color: rgba(var(--bright-color), 1);
+}
+
+.p-recommendations .reco-btn-primary,
+.p-recommendations .reco .reco-tile .reco-tile-poster .reco-tile-score {
+    color: rgba(var(--white-color), 1);
+    background: rgba(var(--buttoms-color), 0.7);
+}
+
+.p-recommendations .reco-btn-primary {
+    box-shadow: 0 2px 6px 2px rgba(var(--shadows-color), 0.25);
+}
+
+.p-recommendations .reco-btn-primary:hover {
+    background: rgba(var(--hover-buttoms-2), 0.7);
+}
+
+/* shikimori.io anime top tabs */
+.b-top_tabs {
+    border-bottom-color: rgba(var(--block-color), 0.4);
+}
+
+.b-top_tabs .selected {
+    color: rgba(var(--light-color), 1);
+    border-bottom-color: rgba(var(--hover-color), 1);
+}
+
+.b-top_place {
+    color: rgba(var(--white-color), 1);
+    background: rgba(var(--block-color), 0.62);
+}
+
+/* shikimori.io tier-list editor */
+.tl-board {
+    color: rgba(var(--light-color), 1);
+    background: rgba(var(--menu-back), 0.8);
+}
+
+.tl-row,
+.tl-pool {
+    background: rgba(var(--block-color), 0.6);
+}
+
+.tl-dropzone {
+    background: rgba(var(--block-color), 0.4);
+}
+
+.tl-topitem {
+    border-bottom-color: rgba(var(--dark-color), 0.2);
+}
+
+.tl-badge {
+    border-color: rgba(var(--menu-back), 1);
 }
 
 .b-collection_search .field input::-webkit-input-placeholder {
@@ -322,7 +398,7 @@ body * [class*="_status_tag"]:not([data-text]) {
     padding: 2px 9px;
 }
 
-.line .value .b-tag:before, .tags .b-tag:before {
+.line .value .b-tag:before, .line .value .b-platform-tag:before, .line .value .b-genre-tag:before, .tags .b-tag:before {
     background: rgba(var(--block-color), 1);
     content: '';
     width: 100%;
@@ -332,6 +408,11 @@ body * [class*="_status_tag"]:not([data-text]) {
     height: 100%;
     z-index: -1;
     border-radius: 10px;
+}
+
+.line .b-platform-tag,
+.line .b-genre-tag {
+    background: unset !important;
 }
 
 .line [class*="_status_tag"].other::before {
@@ -3749,6 +3830,10 @@ body.p-achievements.p-profiles .b-list_switchers > *:hover:after {
 }
 
 /* Feedback section */
+.critique-stars .star-line .title {
+    color: rgba(var(--white-color), var(--hundred));
+}
+
 .b-critique_votes .votes-for {
     color: #4abc56;
 }

@@ -22,6 +22,11 @@
     color: #6bc2ec;
     border: 2px solid #5288a273;
 }
+.history-page a[href ^= "/visual_novels"]:before {
+    content: 'VN ';
+    color: rgba(var(--bright-color), 1);
+    border: 2px solid rgba(var(--bright-color), 0.45);
+}
 [data-locale="en"] .history-page a[href ^= "/a"]:before {
     content: 'Anime ';
 }
@@ -30,4 +35,7 @@
 }
 [data-locale="en"] .history-page a[href ^= "/r"]:before {
     content: 'Ranobe ';
+}
+[data-locale="en"] .history-page a[href ^= "/visual_novels"]:before {
+    content: 'VN ';
 }

@@ -386,6 +386,8 @@ textarea {
 .tags > *,
 .line .b-tag,
 .tags .b-tag,
+.line .b-platform-tag,
+.line .b-genre-tag,
 .b-forums .reload,
 .p-animes-show .other-names,
 .p-mangas-show .other-names,
@@ -416,6 +418,8 @@ textarea {
 
 .tags > .tag-link,
 .line .b-tag,
+.line .b-platform-tag,
+.line .b-genre-tag,
 .b-forums .reload,
 .p-animes-show .other-names,
 .p-mangas-show .other-names,
@@ -442,6 +446,8 @@ textarea {
 .tags .b-anime_status_tag:hover,
 .tags .b-tag:hover,
 .line .b-tag:hover,
+.line .b-platform-tag:hover,
+.line .b-genre-tag:hover,
 .line .tag:hover,
 .b-forums .reload:hover,
 .p-animes-show .other-names:hover,
@@ -721,8 +727,32 @@ a:hover .title span {
     color: rgba(var(--dark-color), 1);
 }
 
-.b-rate .text-score {
+.b-rate .text-score,
+.mal-based,
+.scores .b-mal_score,
+.scores .b-mal_score span {
     color: rgba(var(--light-color), 1);
+}
+
+.b-watch_banner {
+    background: rgba(var(--block-color), 0.6);
+    color: rgba(var(--light-color), 1);
+    box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.2);
+}
+
+.b-watch_banner:hover {
+    background: rgba(var(--shadows-color), 0.15);
+    color: rgba(var(--hover-color), 1);
+    box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.3);
+}
+
+.b-watch_banner__icon {
+    background: rgba(var(--shadows-color), 0.15);
+    box-shadow: inset 0 0 0 1px rgba(var(--dark-color), 0.4);
+}
+
+.b-watch_banner__icon .play {
+    border-left-color: rgba(var(--white-color), 1);
 }
 
 /* цвет значка отзыв */
@@ -1761,7 +1791,9 @@ header.head a.edit,
     border-color: transparent !important;
 }
 
-.b-tag {
+.b-tag,
+.line .b-platform-tag,
+.line .b-genre-tag {
     border-bottom: 1px dashed rgba(var(--bright-color), 1);
     color: rgba(var(--bright-color), 1);
 }
