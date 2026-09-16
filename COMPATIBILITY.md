@@ -94,6 +94,6 @@ Statuses: `mapped`, `patched`, `verified`, `limited`.
 - The generator now loads its checked-out `engitheme` assets. BigShot remains hidden because there is no original style to preserve or repair.
 - Public `.io` templates were compared with their `.rip` counterparts. New catalog filters, MAL/watch controls, anime top, recommendations and tier-list components are mapped to the existing palette without changing their layout or semantic rank colors.
 - The `.io` package was verified on its four new component families; `.io` has no visual-novel section.
-- Generator compilation was exercised for every optional wrapper; release imports now point at the fork's `master` publication branch. Theme version is `4.38.0`.
-- GitHub Pages is published at `https://devln737.github.io/ed-main.github.io/`. The public generator loaded, produced `Shikista + On Battle` CSS with fork imports only, and its published `main_code_2.css` returned version `4.38.0`.
+- Generator compilation was exercised for every optional wrapper; release imports now point at the fork's `master` publication branch. Theme version is `4.38.1`.
+- GitHub Pages is published at `https://devln737.github.io/ed-main.github.io/`. The public generator loaded and produced `Shikista + On Battle` CSS with fork imports only.
 - The secondary `Endless Horizon` palette was checked in the Shikista preview. No changed rule alters mobile layout, so no additional mobile-only override was needed.

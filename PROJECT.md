@@ -2,7 +2,7 @@
 
 ## Status
 
-Core `shikimori.rip` and `shikimori.io` compatibility, optional modules, generator loading and fork release paths are verified. Version `4.38.0` is published through the fork's GitHub Pages site; only the documented BigShot source limitation remains.
+Core `shikimori.rip` and `shikimori.io` compatibility, optional modules, generator loading and fork release paths are verified. Version `4.38.1` is published through the fork's GitHub Pages site; only the documented BigShot source limitation remains.
 
 ## Goal
 

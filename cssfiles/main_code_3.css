@@ -416,8 +416,15 @@ body#profiles_edit .b-to-top .slide:before {
 
 .b-collection-filters .mode-toggle,
 .b-collection-filters .season-selector-box {
-    background: rgba(var(--block-color), 0.4);
     border: none;
+}
+
+.b-collection-filters .mode-toggle {
+    background: rgba(var(--block-color), 0.4);
+}
+
+.b-collection-filters .season-selector-box {
+    background: transparent !important;
 }
 
 .b-collection-filters .mode-toggle[data-value="or"] .mode-toggle_option-or,
@@ -449,6 +456,38 @@ body#profiles_edit .b-to-top .slide:before {
     background: rgba(var(--block-color), 0.4);
     color: rgba(var(--light-color), 1);
     border: none;
+    appearance: textfield;
+}
+
+.b-collection-filters .range-selector_input::-webkit-inner-spin-button,
+.b-collection-filters .range-selector_input::-webkit-outer-spin-button {
+    margin: 0;
+    -webkit-appearance: none;
+}
+
+.b-collection-filters select.season-selector_season {
+    appearance: none;
+    background-color: rgba(var(--block-color), 0.4) !important;
+}
+
+.b-collection-filters .year-dropdown_trigger:after {
+    color: rgba(var(--dark-color), 0.8);
+    font-size: 10px;
+}
+
+.b-collection-filters .vue-tags-input {
+    background: transparent !important;
+}
+
+.b-collection-filters .vue-tags-input .ti-input {
+    background: rgba(var(--block-color), 0.4) !important;
+    border: none !important;
+    border-radius: 2px;
+}
+
+.b-collection-filters .vue-tags-input .ti-new-tag-input {
+    background: transparent !important;
+    box-shadow: none !important;
 }
 
 .b-collection-filters .year-dropdown_list,
