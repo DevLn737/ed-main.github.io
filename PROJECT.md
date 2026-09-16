@@ -2,7 +2,7 @@
 
 ## Status
 
-The implementation plan is approved. Core `shikimori.rip` and `shikimori.io` compatibility are verified, optional-module compatibility is recorded, minimal generator asset loading is repaired, and fork release paths are prepared. Publication and public verification remain.
+Core `shikimori.rip` and `shikimori.io` compatibility, optional modules, generator loading and fork release paths are verified. Version `4.38.0` is published through the fork's GitHub Pages site; only the documented BigShot source limitation remains.
 
 ## Goal
 

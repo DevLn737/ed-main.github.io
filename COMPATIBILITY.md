@@ -80,7 +80,7 @@ Statuses: `mapped`, `patched`, `verified`, `limited`.
 
 ## Current checkpoint
 
-- Local branch: `codex/shikimori-compatibility`.
+- Publication branch: `master`; resumable work remains preserved in `codex/shikimori-compatibility`.
 - Fork: `DevLn737/ed-main.github.io`; `origin` points to the fork and `upstream` to `ed-main/ed-main.github.io`.
 - The working branch is pushed and tracks `origin/codex/shikimori-compatibility`.
 - Global navigation/search package verified in browser CSSOM with no size/layout change; the temporary verification style was removed.
@@ -95,3 +95,5 @@ Statuses: `mapped`, `patched`, `verified`, `limited`.
 - Public `.io` templates were compared with their `.rip` counterparts. New catalog filters, MAL/watch controls, anime top, recommendations and tier-list components are mapped to the existing palette without changing their layout or semantic rank colors.
 - The `.io` package was verified on its four new component families; `.io` has no visual-novel section.
 - Generator compilation was exercised for every optional wrapper; release imports now point at the fork's `master` publication branch. Theme version is `4.38.0`.
+- GitHub Pages is published at `https://devln737.github.io/ed-main.github.io/`. The public generator loaded, produced `Shikista + On Battle` CSS with fork imports only, and its published `main_code_2.css` returned version `4.38.0`.
+- The secondary `Endless Horizon` palette was checked in the Shikista preview. No changed rule alters mobile layout, so no additional mobile-only override was needed.
